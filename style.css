@@ -1,0 +1,316 @@
+body{
+    background-color: hsl(36, 100%, 99%);
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    margin-left: 7px;
+}
+.menu{
+    flex-direction: row;
+    align-items: center;
+    margin-right: 80px;
+    display: flex;
+    gap: 30px;
+}
+.menu > a {
+    color: hsl(236, 13%, 42%);
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu > a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.header-container{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left:150px ;
+    margin-right: 150px;
+    padding-top: 70px;
+    display: flex;
+}
+.main-image {
+    width: 100%;
+    height: auto;
+}
+.image-description {
+    padding: 10px 0;
+}
+h2 {
+    margin-top: 0;
+}
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    margin-right: 150px;
+    margin-left:150px ;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.main-content {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    width: 62%;
+}
+.text-button{
+    justify-content: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+}
+.text-button> button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+.text-content{
+    align-items: flex-start;
+    position: relative;
+    margin-left: auto;
+    line-height: 1.6;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.text-button > p {
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 0;
+}
+.text-content > h1 {
+    font-size: 50px;
+}
+button{
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    align-self: flex-start;
+    align-self: flex-start; 
+    border-style: none;
+    font-size: 18px ;
+    margin-top: 20px;
+    margin-left: 0;
+    height: 40px;
+    width: 200px;
+}
+.sidebar{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(240, 100%, 5%);
+    margin-right: 80px;
+    padding: 20px;
+    width: 25%;
+    height: auto;
+}
+.sidebar-title{
+    color: hsl(35, 77%, 62%);
+}
+.sidebar-block > h2{
+    color: hsl(36, 100%, 99%);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.sidebar-block > h2:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.sidebar-block > p{
+    border-bottom: 0.5px solid hsl(233, 8%, 79%);
+    color: hsl(233, 8%, 79%);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.additional-section{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-right: 150px;
+    margin-left:150px ;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.additional-item{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
+    display: flex;
+    width: 30%;
+}
+.additional-item-img {
+    align-items:  flex-start;
+    justify-content: center; 
+    padding-right: 20px;
+    display: flex;
+    height: auto;
+    width: 30%;
+}
+.additional-item-img img {
+    max-width: 100%; 
+    height: auto;
+}
+.additional-item-text {
+    width: 70%; 
+}
+.additional-item-text >h1{
+    color: hsl(233, 8%, 79%);
+}
+.additional-item-text >h2{
+    color: hsl(240, 100%, 5%);
+}
+.additional-item-text >h2:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.additional-item-text >p {
+    color: hsl(236, 13%, 42%);
+    margin-top: 10px;
+    gap: 20px;
+}
+.container{
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    height: 21px;
+    width: 30px;
+    right: 20px;
+    top: 20px;
+}
+.menu-icon span {
+    background-color: hsl(236, 13%, 42%);
+    transition: transform 0.3s ease;
+    position: absolute;
+    border-radius: 3px;
+    display: block;
+    width: 30px;
+    height: 3px;
+}
+.menu-icon span:nth-child(1) {
+    top: 0;
+}
+.menu-icon span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header-container, .content {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .additional-section {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-container, .content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .additional-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container, .content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .sidebar {
+        margin-right: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .additional-section {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    .additional-item {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        background-color: hsl(36, 100%, 99%);
+        transition: transform 0.3s ease;
+        color: hsl(240, 100%, 5%);
+        transform: translateX(100%);
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        overflow-y:auto;
+        display: none;
+        padding: 20px;
+        width: 80%;
+        bottom: 0;
+        gap: 50px;
+        right: 0;
+        top: 0;
+    }
+    .menu.open {
+        transform: translateX(0%);
+        display: flex;   
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .sidebar {
+        padding: 10px;
+    }
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .text-content{
+        flex-direction: column ;
+    }
+    .additional-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .additional-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .menu-icon {
+        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        right: 20px;
+        height: 21px;
+        width: 30px;
+        top: 20px;
+    }
+    .menu-icon .close-icon {
+    display: none;
+}
+}
